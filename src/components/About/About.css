@@ -19,7 +19,7 @@
     grid-template-columns: repeat(2,1fr);
     place-items: center;
     position: relative;
-    overflow-y:hidden ;
+    overflow:hidden ;
 
    
 }
@@ -79,6 +79,7 @@
 @media screen and (max-width:850px) {
     .about__container{
         grid-template-columns:1fr;
+        overflow: visible;
     }
     .about__right{
         padding: 3rem 3rem;
