@@ -1,0 +1,71 @@
+.projectview{
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.projectview__back{
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    padding: 0.8rem;
+    border-radius: 999px;
+    transition: 0.5s all ;
+
+}
+.projectview__back:hover{
+    transform: scale(1.1);
+}
+.projectview__back svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+}
+.projectview__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-items:center;
+    gap: 1rem;
+    padding: 2rem;
+    
+}
+.projectview__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+.projectview__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.projectview__btn button {
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.projectview__btn .active{
+    opacity: 1;
+}
+.project__filter button:hover{
+    transform: scale(1.1);
+}
+

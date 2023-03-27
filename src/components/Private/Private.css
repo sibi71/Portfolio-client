@@ -1,0 +1,10 @@
+.private{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.private img{
+    width: 50px;
+}

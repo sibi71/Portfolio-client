@@ -1,0 +1,143 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    height: 110vh;
+}
+.contact__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    
+}
+.contact__title span{
+    color: rgb(100, 17, 179);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.contact__title h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.contact__container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 80vw;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+.contact__left h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.contact__left p{
+    font-weight: 500;
+    width: 35rem;
+    margin-bottom: 3rem;   
+}
+.contact__left svg{
+    font-size: 1.2rem;
+}
+.contact__details{
+    margin-bottom: 3rem;
+}
+.contact__details span{
+    padding-left:1rem ;
+
+}
+.contact__media a{
+    margin: 1rem;
+    padding: 0.3rem 0.5rem ;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-radius: 99px;
+    color: #fff !important;
+    transition: 0.3s ease-in-out;
+}
+.contact__media a:hover{
+    transform: scale(1.05);
+}
+
+
+.contact__right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.contact__right h2{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.contact__right form{
+    display: flex;
+    flex-direction: column; 
+}
+.contact__right form input{
+    border: none;
+    background-color: aliceblue;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    outline: none;
+    height: 43px;
+    text-transform: capitalize;
+}
+.contact__message{
+    border: none;
+    background-color: aliceblue;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    outline: none;
+    text-transform: capitalize;
+   
+}
+.contact__right form  button{
+    border: none;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+
+}
+@media screen and (max-width:1025px){
+    .contact__left p{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width:770px){
+    .contact{
+        height: 171vh;
+    }
+    .contact__container{
+        justify-content: center;
+        flex-direction: column;
+        overflow:visible;
+    }
+    .contact__left{
+        margin-bottom: 1rem;
+    }
+    .contact__media a{
+        padding: 0.2rem 0.5rem;
+    }
+    
+}
+@media screen and (max-width:320px){
+    .contact{
+        height: 184vh;
+    }
+}

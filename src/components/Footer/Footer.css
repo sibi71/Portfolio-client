@@ -1,0 +1,49 @@
+.footer{
+    border-radius: 1px;
+    border-top:1px dashed rebeccapurple ;
+}
+
+
+.footer__container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color:transparent;
+    padding: 1rem;
+}
+.footer__details{
+    text-transform: capitalize;
+    color: #858585;
+}
+.footer__details span{
+    color: blueviolet;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.footer__social{
+    display: flex;
+}
+.footer__social a{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+    color: #fff;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
+    padding: 0.2rem 0.5rem ;
+    border-radius: 99px;
+    transition: 0.3s ease-in-out;
+}
+.footer__social a:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:500px){
+    .footer__details{
+        margin-left: 2rem;
+    }
+    .footer{
+        margin-top: 5rem;
+    }
+    
+}
+

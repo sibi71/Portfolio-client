@@ -1,0 +1,26 @@
+.scroll{
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    padding: 0.2rem;
+    border-radius: 99px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
+}
+.scroll a{
+   font-size: 2rem;
+    display:flex;
+    color: #fff !important;
+    justify-content: center;
+}
+.scroll:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:500px){
+    .scroll{
+        display: none;
+    }
+    
+}
+

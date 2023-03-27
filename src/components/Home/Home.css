@@ -1,0 +1,172 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+.home__container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.home__img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.home__img  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.home__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+   
+}
+.home__info h3 span{
+ color: #7d1ba0; 
+
+}
+
+.home__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.home__details p{
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2rem;
+   
+}
+.home__contact{
+    color: white !important;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border-radius: 10px;
+    text-decoration: none;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.job{
+    display: flex;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 0.35rem 1rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.web{
+   left: 30rem;
+    top: 10rem;
+}
+.full{
+    right:27rem;
+    top: 20rem;
+}
+
+.home__jobtitle{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0rem 1rem;
+    margin-bottom: 15px;  
+      background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
+
+}
+@media screen and (max-width:1440px) {
+    
+   
+  
+ .web{
+   left: 28rem;
+    top: 14rem;
+}
+.full{
+    right:25rem;
+    top: 25rem;
+}
+}
+@media screen and (max-width:1024px) {
+    
+   .home__details p{
+    font-size: 2rem;
+   }
+  
+    .web{
+      left: 15rem;
+       top: 10rem;
+   }
+   .full{
+       right:13rem;
+       top: 18rem;
+   }
+   }
+@media screen and (max-width:935px) {
+
+.job{
+    display: none;
+}
+.home__jobtitle{
+    display: flex !important;
+}
+.home__details p{
+    font-size: 1.5rem;
+}
+
+ 
+}
+@media screen and (max-width:700px) {
+
+    .job{
+        display: none;
+    }
+    .home__jobtitle{
+        display: flex !important;
+    }
+    .home__details{
+        width: auto;
+    }
+    .home__details p{
+        font-size: 1.5rem;
+    }
+     
+    }
+    @media screen and (max-width:500px){
+        .home{
+            
+                height: 116vh;
+             
+        }
+        .home__img {
+            width: 250px;
+            height: 250px;
+        }
+
+    }
+    @media screen and (max-width:320px){
+        .home{
+           height: 118vh;
+        }
+        .home__img {
+            width: 250px;
+            height: 250px;
+        }
+
+    }

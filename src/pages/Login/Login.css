@@ -1,0 +1,106 @@
+.login{
+    background:url("https://wallpaperaccess.com/full/1877503.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    
+}
+.login h1{
+    padding: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 10px;
+   
+}
+.login__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.175);
+    border-radius: 10px;
+    color:white;
+    backdrop-filter: blur(3px);
+
+}
+.login__container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 3px dashed lightgray;
+    border-radius: 99px;
+    width: 50%;
+    padding: 1rem;
+}
+.login__container form h5{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+
+}
+.login__container form {
+    width: 300px;
+}
+.login__container form input{
+    height: 35px;
+    margin-bottom: 10px;
+    background-color:transparent;
+    border: 1px solid lightgrey;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: white;
+
+
+}
+.login__Button{
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+}
+.login__Button:hover{
+   transform: scale(1.1);
+}
+.login__back{
+    text-decoration: none;
+    border: 1px solid rgb(110, 89, 168);
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius:99px;
+    margin-right: 20rem;
+    color: rgb(110, 89, 168);
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    color: white !important;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border: none;
+
+
+}
+.login__back:hover{
+   transform: scale(1.1);
+}
