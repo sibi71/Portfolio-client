@@ -1,20 +1,11 @@
 import React from 'react'
 import "./Home.css"
-import profile from "../../img/5484597.jpg"
+import profile from "../../img/me2.jpg"
 import Typed from 'react-typed';
 import { motion } from "framer-motion"
 const Home = () => {
 
-  const moveVariants = {
-    animation:{
-      y:[0, -15],
-      transition:{
-        yoyo: Infinity,
-        duration: 2,
-        delay: 1,
-      }
-    }
-  }
+ 
 
   return (
       <motion.div
@@ -24,9 +15,13 @@ const Home = () => {
 
        className='home' id='home'>  
        <div className='home__container'>
-        <div className='home__img'>
+        <motion.div 
+           
+         
+       
+          className='home__img'>
         <img src={profile} alt="proflie" />
-        </div>
+        </motion.div>
         <div className='home__info'>
             <h3>Hey There, I'm <span>Arunsibi</span></h3>
         
@@ -50,14 +45,45 @@ const Home = () => {
         </div>
         </div>
         <motion.a 
-        variants={moveVariants}
-        animate="animation"
-        whileHover={{scale:1.1}}
-        transition={{duration:0.3}}
-        
+          animate={{
+          y: [0,-15],          
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+         
+       
         href="#contact" className='home__contact'>contact with me </motion.a>
-        <div className='web job'>web Developer</div>
-        <div className='full job'>MERN Stack Developer</div>
+        <motion.div 
+          animate={{
+            x: [0,20],          
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 1
+            }}
+        className='web job'>web Developer</motion.div>
+        <motion.div 
+        animate={{
+          x: [0,-20],          
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0.1, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1
+          }}
+          className='full job'>MERN Stack Developer</motion.div>
        </div>
       </motion.div>
   )

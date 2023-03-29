@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import "./About.css"
-import hero from "../../img/5484597.jpg"
+import hero from "../../img/me2.jpg"
 import {motion} from "framer-motion"
 const About = () => {
   return (
@@ -19,7 +19,9 @@ const About = () => {
           whileInView={{x:[-250,0],opacity:1}}
           transition={{duration:1}}
            className='about__left'>
-            <img src={hero} alt="" />
+            <motion.img 
+           
+            src={hero} alt="" />
           </motion.div>
             <motion.div 
             initial={{x:0,opacity:0}}

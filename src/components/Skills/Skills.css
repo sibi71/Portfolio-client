@@ -53,6 +53,9 @@
 
 }
 @media screen and (max-width:500px){
+    .skills{
+        height: 145vh;
+    }
    
     .skills__details{
         grid-template-columns: repeat(2,1fr);
@@ -71,6 +74,9 @@
     
 }
 @media screen and (max-width:330px){
+    .skills{
+        height: 117vh;
+    }
   
     .skills__icons{
         padding: 0.5rem 0.5rem;
