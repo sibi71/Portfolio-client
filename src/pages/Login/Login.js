@@ -5,7 +5,7 @@ import axios from "../../axios"
 import { useDispatch } from "react-redux"
 import {  handleLogin } from '../../slice/userSlice';
 import { BiArrowBack } from "react-icons/bi"
-import logo from "../../img/5484597.jpg"
+import logo from "../../img/profile-pic.png"
 
 const Login = () => {
     const [email , setEmail] = useState("")
@@ -20,9 +20,15 @@ const Login = () => {
             email,
             password,}).then((res)=>{
               alert(res.data.msg)
+              if(!res.data.token){
+                navigate("/login") 
+              }
+              else{
                 localStorage.setItem("token",res.data.token )
                 dispatch(handleLogin(res.data.token))
-                !res.data.token ? navigate("/login") : navigate("/")
+                navigate("/")
+              }
+              
              
             }).catch((err)=>{
                   console.log(err);

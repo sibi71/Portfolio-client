@@ -93,11 +93,16 @@
 }
 @media screen and (max-width:1440px) {
     
-   
+    .home__contact{
+        margin-top: 1rem;
+    }
+   .home__info{
+    margin-top: 1rem;
+   }
   
  .web{
    left: 28rem;
-    top: 14rem;
+    top: 9rem;
 }
 .full{
     right:25rem;
@@ -105,6 +110,12 @@
 }
 }
 @media screen and (max-width:1024px) {
+    .home__img {
+        margin-bottom: 5rem;
+    }
+    .home__info h3{
+        margin-bottom: 1.5rem;
+    }
     
    .home__details p{
     font-size: 2rem;
@@ -116,9 +127,13 @@
    }
    .full{
        right:13rem;
-       top: 18rem;
+       top: 27rem;
+   }
+   .home__contact{
+    margin-top: 1rem;
    }
    }
+
 @media screen and (max-width:935px) {
 
 .job{

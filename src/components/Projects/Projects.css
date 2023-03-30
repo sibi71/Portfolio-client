@@ -119,11 +119,9 @@
   }
   @media screen and (max-width:1440px) {
     .swiper-wrapper{
-      width: 60% !important;
+      width: 50% !important;
     }
-    .projects__container{
-      height: 70%;
-    }
+   
   }
   @media screen and (max-width:770px) {
     .projects__container{

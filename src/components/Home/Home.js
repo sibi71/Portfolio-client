@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import profile from "../../img/me2.jpg"
+import profile from "../../img/profile-pic.png"
 import Typed from 'react-typed';
 import { motion } from "framer-motion"
 const Home = () => {
