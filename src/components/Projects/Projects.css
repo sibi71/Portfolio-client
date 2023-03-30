@@ -129,7 +129,17 @@
     }
   }
   @media screen and (max-width:520px) {
+    .projects{
+      height: auto;
 
+    }
+    .projects__container{
+      height: 100%;
+      margin-top: 3rem;
+    }
+    .projects__view{
+      margin-top: 3rem;
+    }
     .swiper-wrapper {
       width: 80% !important;
       height:40% !important;

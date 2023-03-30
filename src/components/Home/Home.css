@@ -102,7 +102,7 @@
   
  .web{
    left: 28rem;
-    top: 9rem;
+    top: 14rem;
 }
 .full{
     right:25rem;
@@ -110,24 +110,24 @@
 }
 }
 @media screen and (max-width:1024px) {
-    .home__img {
-        margin-bottom: 5rem;
-    }
-    .home__info h3{
-        margin-bottom: 1.5rem;
-    }
+    
     
    .home__details p{
     font-size: 2rem;
+
+   }
+   .home__img{
+    width: 200px;
+    height: 200px;
    }
   
     .web{
       left: 15rem;
-       top: 10rem;
+       top: 9rem;
    }
    .full{
        right:13rem;
-       top: 27rem;
+       top: 17rem;
    }
    .home__contact{
     margin-top: 1rem;
@@ -144,6 +144,8 @@
 }
 .home__details p{
     font-size: 1.5rem;
+    margin-top: 1rem;
+     margin-left: auto;
 }
 
  
@@ -160,29 +162,24 @@
         width: auto;
     }
     .home__details p{
-        font-size: 1.5rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+        
     }
+
      
     }
     @media screen and (max-width:500px){
         .home{
-            
-                height: 116vh;
-             
+         height: 116vh;
         }
-        .home__img {
-            width: 250px;
-            height: 250px;
+        .home__contact{
+            margin-top: 2rem;
         }
-
-    }
-    @media screen and (max-width:320px){
-        .home{
-           height: 118vh;
-        }
-        .home__img {
-            width: 250px;
-            height: 250px;
+        .home__img{
+            width: auto;
+            height: auto;
+            padding: 2rem;
         }
 
     }

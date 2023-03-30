@@ -109,7 +109,10 @@
 }
 @media screen and (max-width:500px) {
     .about{
-        height: 132vh;
+        height: 101vh;
+    }
+    .about__right{
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width:360px) {

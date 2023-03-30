@@ -113,12 +113,7 @@
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
 
 }
-@media screen and (max-width:1440px){
-    .contact__title{
-        margin-bottom: 5rem;
-    }
 
-}
 @media screen and (max-width:1025px){
     .contact__left p{
         width: auto;
@@ -142,8 +137,9 @@
     }
     
 }
-@media screen and (max-width:320px){
-    .contact{
-        height: 184vh;
-    }
+@media screen and (max-width:500px){
+.contact{
+    height: 167vh;
 }
+}
+
