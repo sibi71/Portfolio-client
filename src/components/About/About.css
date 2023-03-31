@@ -90,6 +90,16 @@
     text-transform: capitalize;
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
+@media screen and (max-width:1440px) {
+    .about{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:1024px) {
+.about{
+    height: 108vh;
+}
+}
 
 @media screen and (max-width:850px) {
     .about{
@@ -109,17 +119,26 @@
 }
 @media screen and (max-width:500px) {
     .about{
-        height: 101vh;
+        height: 134vh;
     }
     .about__right{
         margin-top: 2rem;
     }
+    .about__left{
+        animation: none;
+        
+    }
+    .about__left img {
+        border-radius: 1px;
+    }
 }
-@media screen and (max-width:360px) {
+
+@media screen and (max-width:400px) {
     .about{
-        height: 130vh;
+        height: 139vh;
     }
     .about__left{
-   height: 274px;
-}
+        height: 250px;
+    }
+
 }

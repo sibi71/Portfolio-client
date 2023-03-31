@@ -35,6 +35,7 @@ const Projects = () => {
       })
   },[])
 
+
   return (
     <div className='projects' id='project'>
       <motion.div 
@@ -68,7 +69,7 @@ const Projects = () => {
      {posts.map((post,index)=>{
       return(
           <>
-         <SwiperSlide key={index}>
+         <SwiperSlide key={post.id} >
           <img src={post.data.image} alt="" />
           <div className='project__details'>
             <h5>{post.data.title}</h5>

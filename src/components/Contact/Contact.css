@@ -114,7 +114,17 @@
 
 }
 
+@media screen and (max-width:1440px){
+
+    .contact{
+        height: 87vh;
+    }
+}
+
 @media screen and (max-width:1025px){
+    .contact{
+        height: 113vh;
+    }
     .contact__left p{
         width: auto;
     }
@@ -139,7 +149,13 @@
 }
 @media screen and (max-width:500px){
 .contact{
-    height: 167vh;
+    height: 191vh;
 }
+}
+@media screen and (max-width:400px){
+    .contact{
+        height: 183vh;
+    }
+
 }
 

@@ -92,9 +92,12 @@
 
 }
 @media screen and (max-width:1440px) {
+    .home__details p {
+        margin-bottom: 3rem;
+    }
     
     .home__contact{
-        margin-top: 1rem;
+        margin-top: 1em;
     }
    .home__info{
     margin-top: 1rem;
@@ -102,7 +105,7 @@
   
  .web{
    left: 28rem;
-    top: 14rem;
+    top: 12rem;
 }
 .full{
     right:25rem;
@@ -123,7 +126,7 @@
   
     .web{
       left: 15rem;
-       top: 9rem;
+       top: 8rem;
    }
    .full{
        right:13rem;
@@ -173,13 +176,6 @@
         .home{
          height: 116vh;
         }
-        .home__contact{
-            margin-top: 2rem;
-        }
-        .home__img{
-            width: auto;
-            height: auto;
-            padding: 2rem;
-        }
+        
 
     }

@@ -35,6 +35,11 @@
 .skills__icons:hover{
     transform: scale(1.10);   
 }
+@media screen and (max-width:1440px){
+    .skills{
+        height: 85vh;
+    }
+}
 @media screen and (max-width:1025px){
     .skills__details{
         grid-template-columns: repeat(4,1fr);
@@ -54,7 +59,7 @@
 }
 @media screen and (max-width:500px){
     .skills{
-        height: 113vh;
+        height: 150vh;
     }
    
     .skills__details{

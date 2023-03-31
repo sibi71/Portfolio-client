@@ -16,7 +16,7 @@ const Private = () => {
         setTimeout(()=>{
             setLoading(false)
         },1000)
-    },[])
+    },[dispatch, user])
 
     if(loading){
         return (
