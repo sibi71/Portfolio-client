@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     color: #fff;
-    height: 110vh;
+    padding: 5rem;
 }
 .skills__title{
     margin-bottom: 5rem;
@@ -35,11 +35,7 @@
 .skills__icons:hover{
     transform: scale(1.10);   
 }
-@media screen and (max-width:1440px){
-    .skills{
-        height: 85vh;
-    }
-}
+
 @media screen and (max-width:1025px){
     .skills__details{
         grid-template-columns: repeat(4,1fr);
@@ -59,8 +55,9 @@
 }
 @media screen and (max-width:500px){
     .skills{
-        height: 150vh;
+        padding: 3rem 1rem;
     }
+   
    
     .skills__details{
         grid-template-columns: repeat(2,1fr);
@@ -79,9 +76,7 @@
     
 }
 @media screen and (max-width:330px){
-    .skills{
-        height: 117vh;
-    }
+  
   
     .skills__icons{
         padding: 0.5rem 0.5rem;

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    padding: 8rem;
 }
 .home__container{
     display: flex;
@@ -88,30 +88,10 @@
     border-radius: 20px;
     padding: 0rem 1rem;
     margin-bottom: 15px;  
-      background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
 
 }
-@media screen and (max-width:1440px) {
-    .home__details p {
-        margin-bottom: 3rem;
-    }
-    
-    .home__contact{
-        margin-top: 1em;
-    }
-   .home__info{
-    margin-top: 1rem;
-   }
-  
- .web{
-   left: 28rem;
-    top: 12rem;
-}
-.full{
-    right:25rem;
-    top: 25rem;
-}
-}
+
 @media screen and (max-width:1024px) {
     
     
@@ -147,35 +127,47 @@
 }
 .home__details p{
     font-size: 1.5rem;
-    margin-top: 1rem;
-     margin-left: auto;
+    margin-left: auto;
 }
 
  
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px){
+    
+        .home__container{
+            padding: 1rem 3rem;
+        }
+        .home__details {
+            width: auto;
+           padding: 1rem;
+        }
+        .home__img{
+            width: 300px;
+            height: 300px;
+           }
+          
 
-    .job{
-        display: none;
+}
+@media screen and (max-width:380px){
+        .home__details p {
+            font-size: 1rem;
+            padding: 0rem;
+        }
+        .home__contact{
+            margin-top: auto;
+        }
+
+}
+@media screen and (max-width:330px){
+    .home__img{
+        width: 250px;
+        height: 250px;
     }
-    .home__jobtitle{
-        display: flex !important;
+    .home__container{
+        padding: 1rem;
     }
     .home__details{
-        width: auto;
-    }
-    .home__details p{
-        font-size: 1rem;
-        margin-left: 2rem;
-        
+        padding: 0;
     }
 
-     
-    }
-    @media screen and (max-width:500px){
-        .home{
-         height: 116vh;
-        }
-        
-
-    }
+}

@@ -3,13 +3,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    height: 100vh;
+    color: black;
+    background-color: lightgray;
+    padding: 3rem;
+    border-top-right-radius:999px ;
+    border-bottom-right-radius:10px ;
+    width: 98vw;
+   
 }
 .about__title{
     text-align: center ;
     margin-bottom: 3rem;
-    color: white;
 }
 .about__title h1{
     font-size: 3rem;
@@ -26,30 +30,28 @@
 .about__left{
     max-width: 350px;
     height: 350px;
-    border-radius: 10px;
-    animation-name: animation ;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
+ 
+
     
 }
-@keyframes animation {
-    0%   {box-shadow:5px 5px 20px  #bc1888;}
-    25%  {box-shadow:5px 5px 20px  #cc2366;}
-    50%  {box-shadow:5px 5px 20px #e6683c;}
-    100% {box-shadow:5px  5px 20px #f09433;}
 
-}
 
 .about__left img{
     width: 100%;
     height: 100%;
     object-fit:cover;
-    border-radius: 10px;
+    transition:0.3s ease-in-out;
+    
+
+    
+}
+.about__left img:hover{
+    box-shadow: 5px 5px 20px -9px black;
+   transform: scale(1.05);
+  
 }
 .about__right{
-    color: white;
-    padding: 1rem; 
+  
     display: flex;
     flex-direction: column;
     
@@ -58,11 +60,11 @@
 
 
 .about__right p{
-    font-size:1.5rem;
+    font-size:1.2rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    max-width: 650px;
-    font-weight: 100;
+    max-width: 600px;
+    font-weight: 400;
 }
 .about__right span{
     display: flex;
@@ -79,32 +81,26 @@
 
 .about__right  a{
     text-decoration: none;
-    color: white;
     width: 165px;
     border-radius: 10px;
     font-size: 1rem;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     padding: 0.65rem 1rem;
     text-transform: capitalize;
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
-@media screen and (max-width:1440px) {
-    .about{
-        height: 80vh;
-    }
-}
+
 @media screen and (max-width:1024px) {
-.about{
-    height: 108vh;
-}
+   .about{
+    border-top-right-radius:374px ;
+   }
 }
 
 @media screen and (max-width:850px) {
-    .about{
-        height: 130vh;
-    }
+
     .about__container{
         grid-template-columns:1fr;
         overflow: visible;
@@ -119,10 +115,12 @@
 }
 @media screen and (max-width:500px) {
     .about{
-        height: 134vh;
+        border-radius: 1px;
     }
+    
     .about__right{
         margin-top: 2rem;
+        padding: 1rem;
     }
     .about__left{
         animation: none;
@@ -134,9 +132,7 @@
 }
 
 @media screen and (max-width:400px) {
-    .about{
-        height: 139vh;
-    }
+    
     .about__left{
         height: 250px;
     }
