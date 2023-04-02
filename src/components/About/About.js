@@ -40,7 +40,7 @@ const About = () => {
               <motion.a
                whileHover={{scale:1.1}}
                transition={{duration:0.3}} 
-               href='https://drive.google.com/file/d/1YjXaYbr1qfRQwnCw_9O8EjHtrHtqKrNR/view?usp=share_link' target="_blank">
+               href='https://drive.google.com/file/d/1ygyKlIIMIHGmMaFBVN0Eh3nofcMoovFs/view?usp=share_link' target="_blank">
                 download resume
               </motion.a>
 
