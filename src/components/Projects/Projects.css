@@ -166,7 +166,15 @@
       font-size: 15px;
       
     }
-    
+    .projects__title h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 19px;
+      letter-spacing: normal;
+
+      
+    }
     .projects__container{
       height: 100%;
       margin-top: 3rem;
