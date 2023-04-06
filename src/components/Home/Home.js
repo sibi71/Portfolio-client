@@ -9,11 +9,12 @@ const Home = () => {
 
   return (
       <motion.div
+
       initial={{y:-25,opacity:0}}
       animate={{y:0,opacity:1}}
       transition={{duration:2,delay:0.5}}
-
        className='home' id='home'>  
+
        <div className='home__container'>
         <motion.div 
            

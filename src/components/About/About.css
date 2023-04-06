@@ -3,12 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: black;
-    background-color: lightgray;
-    padding: 3rem;
-    border-top-right-radius:999px ;
-    border-bottom-right-radius:10px ;
+    color: white;
+    background: rgb(238,238,238);
+background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
+    padding: 4rem 2rem;
+    border-radius: 150px 150px 30px 30px;
     width: 98vw;
+    margin: 1%;
    
 }
 .about__title{
@@ -25,14 +26,10 @@
     position: relative;
     overflow:hidden ;
 
-   
 }
 .about__left{
-    max-width: 350px;
+    width: 350px;
     height: 350px;
- 
-
-    
 }
 
 
@@ -42,8 +39,6 @@
     object-fit:cover;
     transition:0.3s ease-in-out;
     
-
-    
 }
 .about__left img:hover{
     box-shadow: 5px 5px 20px -9px black;
@@ -51,11 +46,8 @@
   
 }
 .about__right{
-  
     display: flex;
     flex-direction: column;
-    
-
 }
 
 
@@ -95,7 +87,7 @@
 
 @media screen and (max-width:1024px) {
    .about{
-    border-top-right-radius:374px ;
+    margin: 1%;
    }
 }
 
@@ -114,8 +106,13 @@
  
 }
 @media screen and (max-width:500px) {
+
     .about{
-        border-radius: 1px;
+        border-radius: 80px 80px 10px 10px;
+    }
+    .about__left{
+        width: 250px;
+        height: 250px;
     }
     
     .about__right{
@@ -132,6 +129,12 @@
 }
 
 @media screen and (max-width:400px) {
+    .about{
+        border-radius: 80px 80px 10px 10px;
+    }
+    .about__title h1{
+        font-size: 2rem;
+    }
     
     .about__left{
         height: 250px;

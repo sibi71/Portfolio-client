@@ -15,12 +15,13 @@ const Skills = () => {
       <motion.div 
       inherit={{ opacity:0}}
       whileInView={{y:[-50,0],opacity:1}}
-      transition={{duration:0.5}}
-      className='skills__details'>
+      transition={{duration:1,delay:0.5}}
+      className='skills__details'>  
         {
             skillsicon.map((icon,index)=>{
               return(
-                <div className='skills__icons' key={index}>
+                <div 
+                className='skills__icons' key={index}>
                   <img src={icon} alt="" />
                 </div>
               )

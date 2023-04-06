@@ -3,17 +3,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   background-color: lightgray;
-   padding: 3rem;
-   border-bottom-right-radius:300px ;
-   border-top-left-radius: 300px;
-  width: 98vw;
+    background: rgb(238,238,238);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
+   border-radius: 999px 999px 999px 999px;
+   padding: 5rem;
+    width: 98vw;
+    margin: 1%;
    overflow: hidden;
-    
+   
 }
+.project__img{
+    cursor: pointer;
+    border-radius: 10px;
+}
+.project__img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
 .projects__title{
   display: flex;
-  color: black;
+  color: white;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -21,7 +33,7 @@
     
 }
 .projects__title span{
-  color: rgb(100, 17, 179);
+  color: black;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -40,51 +52,49 @@
     height: 100%;
     width: 80vw;
     left: 1rem;
-    background: transparent;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
     padding: 1.5rem;
   }
+ 
   .project__details{
-    color: #fff;
-    background:black;
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 5px ;
-    border-bottom-right-radius: 5px;
-    
+    position: absolute;
+    top: 70%;
+    left:0;  
+    width: 100%;
+    height: 90px;
+    border-radius: 99px 99px 0px 0px;
+    background-color:oldlace;
+    box-shadow: -5px -5px 20px -10px black;
   } 
-  .project__details span{
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 1rem;
-  }
-
-  .project__details h5{
-    margin-top: 1rem;
-    text-transform: uppercase;
-  }
-  .project__details a{
+  .project__details p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 99px;
-    padding: 0.5rem;
-    width: 35px;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    margin: 0.5rem;
-    transition: 0.3s ease-in-out;
+    color: black;
+    border-radius: 20px;
+  
+    
   }
-  .project__details span a:hover{
-    transform: scale(1.05);
-    border: none;
+ 
+  .project__details h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 1rem;
+    
 
   }
+  .project__details a{
+    color: #000;
+    padding-left: 1rem;
+    font-size: 20px;
+  }
+
   
   .swiper{
     width: 100%;
@@ -107,6 +117,7 @@
   .swiper-slide img {
     display: block;
     width: 100%;
+    height: 300px;
   }
   .projects__view{
     text-decoration: none;
@@ -126,14 +137,34 @@
 
   
   @media screen and (max-width:770px) {
+    .projects{
+      border-radius: 10px 150px 150px 150px;
+    }
+    .project__details {
+      border-radius: 10px;
+      padding: 0.3rem;
+    }
     .projects__container{
       height: 70%;
     }
   }
   @media screen and (max-width:500px) {
+   
     .projects{
-      border-radius: 1px;
+      
       border: none;
+      border-radius: 80px 80px 200px 200px;
+    }
+    .project__details{
+      background: transparent;
+      backdrop-filter: blur(10px);
+      border-radius: 5px;
+      
+    }
+    .project__details p{
+      padding: 1rem;
+      font-size: 15px;
+      
     }
     
     .projects__container{
@@ -151,12 +182,34 @@
     
   }
   @media screen and (max-width:320px) {
+    .projects{
+      border-radius: 80px 80px 200px 200px;
+  }
+    .project__details{
+      background: white;
+      border-radius: 5px;
+      backdrop-filter: none;
+    }
+    .project__details p h5{
+      font-size: 10px ;
+      font-weight: 300;
+    }
     .projects__title h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 19px;
       letter-spacing: normal;
+
+      
+    }
+    .swiper-wrapper {
+      width: 80% !important;
     }
     
    .projects__container{
-    height: 40%;
+    margin-top: 1rem;
+    height: 60%;
    }
    
     

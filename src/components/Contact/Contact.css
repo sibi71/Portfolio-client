@@ -28,7 +28,8 @@
 .contact__container{
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background: rgb(238,238,238);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
     padding: 1.5rem;
     width: 80vw;
     border-radius: 10px;
@@ -127,6 +128,7 @@
         justify-content: center;
         flex-direction: column;
         overflow:visible;
+        width: 90vw;
     }
     .contact__left{
         margin-bottom: 1rem;

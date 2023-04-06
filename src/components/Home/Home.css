@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 8rem;
+    
 }
 .home__container{
     display: flex;
@@ -144,16 +145,13 @@
 }
 @media screen and (max-width:500px){
     
-        .home__container{
-            padding: 1rem 3rem;
-        }
         .home__details {
-            width: auto;
-           padding: 1rem;
+            width: 100vw;
+           padding: 1rem 2rem;
         }
         .home__img{
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
            }
           
 
@@ -173,11 +171,8 @@
         width: 250px;
         height: 250px;
     }
-    .home__container{
-        padding: 1rem;
-    }
     .home__details{
-        padding: 0;
+        padding: 1rem;
     }
 
 }

@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 import { Link } from 'react-router-dom'
-import {AiFillGithub} from "react-icons/ai"
+
 import {motion} from "framer-motion"
 
 const Projects = () => {
@@ -69,14 +69,15 @@ const Projects = () => {
      {posts.map((post,index)=>{
       return(
           <>
-         <SwiperSlide key={post.id} >
-          <img src={post.data.image} alt="" />
+         <SwiperSlide key={post.id}>
+          <div className='project__img'>
+          <img src={post.data.image} alt=""  />
+          </div>
           <div className='project__details'>
+            <p>
             <h5>{post.data.title}</h5>
-          <span>
-          <a href={post.data.gitHub} target="_blank" ><AiFillGithub /></a>
            <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a>
-           </span>
+           </p>
           </div>
         </SwiperSlide>
         </>

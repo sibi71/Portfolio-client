@@ -27,13 +27,25 @@
     justify-content: center;
     width: 150px;
     height: 150px;
+    cursor: pointer;
+    border:2px dashed lightgray;
+    padding: 1.5rem;
+    border-radius: 50px 50px 150px 5px;
+    transition: 0.5s ease-in-out;
+    
 }
 .skills__icons img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .skills__icons:hover{
-    transform: scale(1.10);   
+    transform: scale(1.10);  
+    border: none;
+    background: white;
+    box-shadow: 5px 5px 20px rgb(250, 250, 250);
+    
+    
 }
 
 @media screen and (max-width:1025px){
@@ -79,13 +91,13 @@
   
   
     .skills__icons{
-        padding: 0.5rem 0.5rem;
-        width: 134px;
-        height:122px ;
+        padding: 1rem;
+        width: 100px;
+        height:100px ;
     }
     .skills__details{
         grid-template-columns: repeat(2,1fr);
-        gap: 0.5rem;
+        gap: 2rem;
 
     }
 
