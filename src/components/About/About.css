@@ -4,12 +4,9 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    background: rgb(238,238,238);
-background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
     padding: 4rem 2rem;
-    border-radius: 150px 150px 30px 30px;
-    width: 98vw;
-    margin: 1%;
+    background: url("https://w0.peakpx.com/wallpaper/296/179/HD-wallpaper-white-leaves-on-side-with-dark-black-background-black-aesthetic.jpg");
+    
    
 }
 .about__title{
@@ -20,16 +17,21 @@ background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%
     font-size: 3rem;
 }
 .about__container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     overflow:hidden ;
+    color: black;
+    background: rgb(238,238,238);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 80vw;
 
 }
 .about__left{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+
 }
 
 
@@ -37,17 +39,19 @@ background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%
     width: 100%;
     height: 100%;
     object-fit:cover;
-    transition:0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
     
+   
 }
-.about__left img:hover{
-    box-shadow: 5px 5px 20px -9px black;
-   transform: scale(1.05);
-  
-}
+
+
+
 .about__right{
-    display: flex;
+    display: flex;  
     flex-direction: column;
+    margin-left: 3rem;
+     width: 60%;
 }
 
 
@@ -86,19 +90,24 @@ background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%
 }
 
 @media screen and (max-width:1024px) {
-   .about{
-    margin: 1%;
-   }
+
 }
 
 @media screen and (max-width:850px) {
 
     .about__container{
-        grid-template-columns:1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         overflow: visible;
+    }
+    .about__left{
+        width: 300px;
     }
     .about__right{
         padding: 3rem 3rem;
+        width: auto;
     }
     .about__right p{
         font-size: 1rem;
@@ -106,18 +115,23 @@ background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%
  
 }
 @media screen and (max-width:500px) {
-
     .about{
-        border-radius: 80px 80px 10px 10px;
+        padding: 0.2rem 0.5rem;
+        background: none;
     }
+    .about__container{
+        width: 90vw;
+    }
+
     .about__left{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     
     .about__right{
         margin-top: 2rem;
         padding: 1rem;
+        margin-left: auto;
     }
     .about__left{
         animation: none;
@@ -129,9 +143,7 @@ background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%
 }
 
 @media screen and (max-width:400px) {
-    .about{
-        border-radius: 80px 80px 10px 10px;
-    }
+    
     .about__title h1{
         font-size: 2rem;
     }

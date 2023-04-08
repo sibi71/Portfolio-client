@@ -75,9 +75,11 @@ const Projects = () => {
           </div>
           <div className='project__details'>
             <p>
-            <h5>{post.data.title}</h5>
-           <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a>
+            <h5>{post.data.title}  <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a></h5>
+          
+           <span>TechTools: {post.data.techtools}</span>
            </p>
+          
           </div>
         </SwiperSlide>
         </>

@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(17, 17, 17) !important;
+  background-color: black !important;
 }
 ::-webkit-scrollbar{
 width: 5PX;

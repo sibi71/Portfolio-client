@@ -3,12 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(238,238,238);
-    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
-   border-radius: 999px 999px 999px 999px;
+   border-radius: 20px ;
    padding: 5rem;
-    width: 98vw;
-    margin: 1%;
+   background: url("https://cutewallpaper.org/21/black-wallpaper-aesthetic/57-COMFORTABLE-MOBILE-PHONE-IPHONE-WALLPAPERS-EVERYONE-WILL-.jpg");
    overflow: hidden;
    
 }
@@ -33,7 +30,7 @@
     
 }
 .projects__title span{
-  color: black;
+  color: blueviolet;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -50,7 +47,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 80vw;
+    width: 90vw;
     left: 1rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -65,16 +62,17 @@
     left:0;  
     width: 100%;
     height: 90px;
-    border-radius: 99px 99px 0px 0px;
-    background-color:oldlace;
-    box-shadow: -5px -5px 20px -10px black;
+    box-shadow: -5px -5px 30px  black;
+    background: rgb(238,238,238);
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
   } 
   .project__details p{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    border-radius: 20px;
+    flex-direction: column;
+    color: white;
+  
   
     
   }
@@ -90,9 +88,16 @@
 
   }
   .project__details a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000;
     padding-left: 1rem;
-    font-size: 20px;
+  }
+  .project__details span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   
@@ -113,6 +118,9 @@
     width: 300px;
     height: 300px;
   }
+  .swiper-pagination{
+    display: none !important;
+  }
   
   .swiper-slide img {
     display: block;
@@ -125,7 +133,7 @@
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     padding: 0.50rem 1rem;
     color: #fff !important;
-    border-radius: 5px;
+    border-radius: 10px;
     text-transform: capitalize;
     transition: 0.3s ease-in-out;
   }
@@ -137,32 +145,36 @@
 
   
   @media screen and (max-width:770px) {
-    .projects{
-      border-radius: 10px 150px 150px 150px;
-    }
+    
     .project__details {
       border-radius: 10px;
       padding: 0.3rem;
     }
+    .project__details span{
+      font-size: 10px;
+      padding: 0.1rem 0.3rem;
+    }
     .projects__container{
+
       height: 70%;
     }
   }
   @media screen and (max-width:500px) {
    
     .projects{
-      
       border: none;
-      border-radius: 80px 80px 200px 200px;
-    }
-    .project__details{
-      background: transparent;
-      backdrop-filter: blur(10px);
-      border-radius: 5px;
+      background: none;
       
     }
+    
+    .project__details span{
+      font-size: 10px;
+      padding: 0.1rem 0.3rem;
+    }
+  
+  
+   
     .project__details p{
-      padding: 1rem;
       font-size: 15px;
       
     }
@@ -178,6 +190,7 @@
     .projects__container{
       height: 100%;
       margin-top: 3rem;
+ 
     }
     .projects__view{
       margin-top: 3rem;
@@ -190,13 +203,9 @@
     
   }
   @media screen and (max-width:320px) {
-    .projects{
-      border-radius: 80px 80px 200px 200px;
-  }
-    .project__details{
-      background: white;
-      border-radius: 5px;
-      backdrop-filter: none;
+     .project__details span{
+      font-size: 10px;
+      padding: 0rem 5px;
     }
     .project__details p h5{
       font-size: 10px ;
@@ -218,6 +227,7 @@
    .projects__container{
     margin-top: 1rem;
     height: 60%;
+
    }
    
     
