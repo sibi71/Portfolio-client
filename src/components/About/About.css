@@ -3,9 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: black;
     padding: 4rem 2rem;
-    background: url("https://w0.peakpx.com/wallpaper/296/179/HD-wallpaper-white-leaves-on-side-with-dark-black-background-black-aesthetic.jpg");
+    background-color:aliceblue;
     
    
 }
@@ -21,8 +21,6 @@
     justify-content: space-between;
     overflow:hidden ;
     color: black;
-    background: rgb(238,238,238);
-    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
     padding: 3rem;
     border-radius: 20px;
     width: 80vw;
@@ -117,7 +115,9 @@
 @media screen and (max-width:500px) {
     .about{
         padding: 0.2rem 0.5rem;
-        background: none;
+    }
+    .about__title{
+        margin-top: 2rem;
     }
     .about__container{
         width: 90vw;
@@ -129,6 +129,7 @@
     }
     
     .about__right{
+        width: auto;
         margin-top: 2rem;
         padding: 1rem;
         margin-left: auto;

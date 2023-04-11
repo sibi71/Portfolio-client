@@ -1,5 +1,7 @@
 .projectview{
+    background-color: aliceblue;
     padding: 2rem;
+
    
 }
 .projectview__back{
@@ -35,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     text-transform: uppercase;
     margin-bottom: 1rem;
 

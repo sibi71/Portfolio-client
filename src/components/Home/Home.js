@@ -9,7 +9,6 @@ const Home = () => {
 
   return (
       <motion.div
-
       initial={{y:-25,opacity:0}}
       animate={{y:0,opacity:1}}
       transition={{duration:2,delay:0.5}}
@@ -17,9 +16,7 @@ const Home = () => {
 
        <div className='home__container'>
         <motion.div 
-           
-         
-       
+        
           className='home__img'>
         <img src={profile} alt="proflie" />
         </motion.div>

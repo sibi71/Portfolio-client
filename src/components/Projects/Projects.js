@@ -17,6 +17,7 @@ import { EffectCoverflow, Pagination } from "swiper";
 import { Link } from 'react-router-dom'
 
 import {motion} from "framer-motion"
+import Card from 'react-bootstrap/Card';
 
 const Projects = () => {
   const [posts,setPosts] = useState([]) 
@@ -34,6 +35,7 @@ const Projects = () => {
         )
       })
   },[])
+
 
 
   return (
@@ -70,17 +72,19 @@ const Projects = () => {
       return(
           <>
          <SwiperSlide key={post.id}>
-          <div className='project__img'>
-          <img src={post.data.image} alt=""  />
-          </div>
-          <div className='project__details'>
-            <p>
-            <h5>{post.data.title}  <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a></h5>
-          
-           <span>TechTools: {post.data.techtools}</span>
-           </p>
-          
-          </div>
+         <Card className='project_card'>
+        <Card.Img variant="top" src={post.data.image}  className='project__img'/>
+        <Card.Body className='project__body'>
+          <Card.Title className='project__title'>{post.data.title}</Card.Title>
+          <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted card__footer " >
+          <Card.Subtitle className="mb-2 text-muted project__host">Techtools: {post.data.techtools}</Card.Subtitle>
+            </small>
+        </Card.Footer>
+        
+      </Card>
         </SwiperSlide>
         </>
       )

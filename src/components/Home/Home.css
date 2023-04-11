@@ -136,6 +136,9 @@
 .home__jobtitle{
     display: flex !important;
 }
+.home__details{
+    width: 100%;
+}
 .home__details p{
     font-size: 1.5rem;
     margin-left: auto;

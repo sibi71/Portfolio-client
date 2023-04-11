@@ -73,7 +73,7 @@ cursor: pointer;
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff !important;
+    color: gray !important;
     font-size: 0.85rem;
     opacity: 0.6;
     transition: 0.5s ease-in-out;
@@ -86,6 +86,7 @@ cursor: pointer;
     margin-left: 3rem;
     border-radius: 10px;
     padding: 0.4rem 1.2rem;
+    color: white !important;
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
     transition: 0.3s ease-in-out ;
 
@@ -129,7 +130,7 @@ cursor: pointer;
     transition: 1s ease-in-out;
 }
 .navbar__menuicon{
-    color: #fff !important;
+    color: gray!important;
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0.6;

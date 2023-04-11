@@ -9,7 +9,6 @@ const About = () => {
       <motion.div 
       initial ={{opacity:0}}
       whileInView = {{y:[-50,0],opacity:1}}
-
       className='about__title'>
         <h1>About Me</h1>
         </motion.div>
@@ -47,6 +46,7 @@ const About = () => {
             </motion.div>
         </div>
     </div>
+    
   )
 }
 
