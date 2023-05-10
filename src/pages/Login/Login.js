@@ -10,7 +10,7 @@ import logo from "../../img/profile-pic.png"
 const Login = () => {
     const [email , setEmail] = useState("")
     const [password ,setPassword] = useState("")
-
+    const [msg ,setMsg] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
@@ -19,7 +19,7 @@ const Login = () => {
           await axios.post("/user/login",{
             email,
             password,}).then((res)=>{
-              alert(res.data.msg)
+              setMsg(res.data.msg)
               if(!res.data.token){
                 navigate("/login") 
               }
@@ -41,7 +41,11 @@ const Login = () => {
         <h1>Admin Only</h1>
         <div className='login__container'>
         <Link to="/" className='login__back'><BiArrowBack /></Link>
+          <p className='login__errmsg'>
+            {msg}
+          </p>
             <img src={logo} alt=""/>
+
         <form>
         <h5>E-mail :</h5>
         <input type="email" 

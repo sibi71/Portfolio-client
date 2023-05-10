@@ -10,7 +10,7 @@ const Skills = () => {
       whileInView={{y:[-50,0],opacity:1}}
       transition={{duration:1}}
       className='skills__title'>
-        <h1>Skills</h1>
+        <h1>Skills & Service</h1>
       </motion.div>
       <motion.div 
       inherit={{ opacity:0}}
@@ -29,6 +29,8 @@ const Skills = () => {
         }
 
       </motion.div>
+
+
       
       </div>
   )

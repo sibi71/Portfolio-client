@@ -72,7 +72,7 @@ const Projects = () => {
       return(
           <>
          <SwiperSlide key={post.id}>
-         <Card className='project_card'>
+         <Card className='project_card' >
         <Card.Img variant="top" src={post.data.image}  className='project__img'/>
         <Card.Body className='project__body'>
           <Card.Title className='project__title'>{post.data.title}</Card.Title>

@@ -1,6 +1,7 @@
 .projectview{
-    background-color: aliceblue;
+   background-color: rgba(36, 35, 35, 0.467);
     padding: 2rem;
+   
 
    
 }
@@ -31,13 +32,14 @@
     justify-items:center;
     gap: 1rem;
     padding: 2rem;
+   
     
 }
 .projectview__title{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #fff;
     text-transform: uppercase;
     margin-bottom: 1rem;
 

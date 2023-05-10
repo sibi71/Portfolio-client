@@ -38,6 +38,16 @@ export const projectimg = [
    "https://user-images.githubusercontent.com/84927939/167564786-837aa109-5e02-4c34-8d17-9d08d16b28f1.png"
 ]
 
+export const service = [
+   {
+      web:"Web developer service involves designing, building, and maintaining websites using coding languages such as HTML, CSS, and JavaScript to ensure optimal functionality and user experience.",
+      mern:"MERN stack developer service involves developing web applications using MongoDB, Express, React, and Node.js, allowing for efficient development of dynamic and scalable full-stack web applications.",
+      full:"Full-stack developers are responsible for developing both front-end and back-end components of web applications. They have knowledge of multiple programming languages and are proficient in various software development tools, enabling them to create robust and dynamic web applications",
+      react:"React developers are responsible for developing user interfaces and components using the React.js library. They have expertise in JavaScript, HTML, CSS, and other front-end languages, enabling them to create high-quality, scalable, and interactive web applications."
+      
+   }
+]
+
 
 
 

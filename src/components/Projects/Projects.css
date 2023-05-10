@@ -4,16 +4,19 @@
     align-items: center;
     flex-direction: column;
    padding: 5rem;
-  background-color: aliceblue;
    overflow: hidden;
+
+ 
    
 }
-
+.project_card{
+  background-color: #ffffff;
+}
 
 
 .projects__title{
   display: flex;
-  color: black;
+  color: #fff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -30,6 +33,7 @@
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 600;
+  color: #fff;
 }
 .projects__container {
     position: relative;
@@ -56,6 +60,7 @@
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
+    
   }
   .project__title{
     padding-right: 1rem;
@@ -63,9 +68,9 @@
   .project__body a{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom:5px ;
     font-size: 20px;
-    color:black;
+    color:#000;
   }
   .swiper{
     width: 100%;
