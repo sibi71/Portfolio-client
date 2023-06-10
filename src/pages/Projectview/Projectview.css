@@ -2,8 +2,6 @@
    background-color: rgba(36, 35, 35, 0.467);
     padding: 2rem;
    
-
-   
 }
 .projectview__back{
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
@@ -28,12 +26,11 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     justify-items:center;
     gap: 1rem;
     padding: 2rem;
-   
-    
+    min-height: fit-content;    
 }
 .projectview__title{
     display: flex;
@@ -51,22 +48,24 @@
    
 }
 .projectview__btn button {
-    padding: 0.5rem 2rem;
+    padding: 0.3rem 2rem;
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     font-size: 15px;
-    color: white;
-    opacity: 0.5;
+    color: black;
     transition: 0.3s ease-in-out;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-color: #fff;
+
+     
 }
 .projectview__btn .active{
-    opacity: 1;
+    color: white;
+    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 .project__filter button:hover{
     transform: scale(1.1);

@@ -3,7 +3,9 @@
     justify-content: center;
     align-items:center ;
     flex-direction: column;
-    padding: 3rem;
+    padding:5.65rem 2rem;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #8a1e8c, #b7167e, #d7266b, #ed4657, #f86942, #fa7c38, #f98f2e, #f5a227, #f3a826, #f2af25, #efb526, #edbb27);
 }
 .contact__title{
     display: flex;
@@ -14,7 +16,7 @@
     
 }
 .contact__title span{
-    color: rgb(100, 17, 179);
+    color: blue;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -27,13 +29,16 @@
 }
 .contact__container{
     display: flex;
-    justify-content: space-between;
-    background: rgb(238,238,238);
-    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(187,4,242,1) 45%, rgba(255,255,255,1) 100%);
+    justify-content: space-between;  
     padding: 1.5rem;
-    width: 80vw;
+    background-color:rgba(255, 255, 255, 0.296);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    width: 90vw;
     border-radius: 10px;
     overflow: hidden;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .contact__left h2{
     text-transform: uppercase;
@@ -45,9 +50,16 @@
     font-weight: 500;
     width: 35rem;
     margin-bottom: 3rem;   
+    
+}
+.conatactback__home{
+   
+    text-decoration: none;
+
 }
 .contact__left svg{
     font-size: 1.2rem;
+    color: blue;
 }
 .contact__details{
     margin-bottom: 3rem;
@@ -59,7 +71,7 @@
 .contact__media a{
     margin: 1rem;
     padding: 0.3rem 0.5rem ;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: blue;
     border-radius: 99px;
     color: #fff !important;
     transition: 0.3s ease-in-out;
@@ -111,7 +123,7 @@
     font-size: 1rem;
     text-transform: capitalize;
     color: #fff;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+    background:  blue
 
 }
 
@@ -124,6 +136,9 @@
     
 }
 @media screen and (max-width:770px){
+    .contact{
+        height: auto;
+    }
     .contact__container{
         justify-content: center;
         flex-direction: column;
@@ -138,9 +153,14 @@
     }
     
 }
+@media screen and (max-width:500px) {
+    .contact__media a{
+        margin: 0.5rem;
+    }
+    
+}
 @media screen and (max-width:330px){
     .contact__title h1{
-
         font-size: 2.5rem;
     }
 

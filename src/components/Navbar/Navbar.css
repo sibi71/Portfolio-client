@@ -1,9 +1,11 @@
+
 .navbar{
     position: fixed ;
     top: 0;
     width: 100%;
     left: 0;
     z-index: 100;
+    
 }
 .navbar__active{
     position: fixed ;
@@ -11,7 +13,7 @@
     width: 100%;
     left: 0;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(57, 56, 56, 0.15);
     backdrop-filter:blur(10px);
     transition: 0.5s ease-in-out;
     
@@ -19,32 +21,37 @@
 
 .navbar__container{
     position: relative;
-    max-width: 1224px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 5rem;
     margin-left: auto;
     margin-right: auto;
 
 }
 .navbar__logo{
-background-color: white;
+background: rgb(255, 255, 255);
 padding: 10px;
 width: 40px;
 height: 40px;
-border-radius: 50px;
+border-radius:50%;
 display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+border: 1px dashed rgba(46, 117, 240, 0.4) ;
+box-shadow:rgba(46, 75, 240, 0.4) 5px 5px, rgba(46, 46, 240, 0.3) 10px 10px, rgba(46, 65, 240, 0.2) 15px 15px, rgba(85, 46, 240, 0.1) 20px 20px, rgba(53, 46, 240, 0.05) 25px 25px;
 }
 .navbar__logo h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    color: black;
+    font-weight: 100;
+    
+  
 }
 
 .navbar__info{
@@ -53,16 +60,25 @@ cursor: pointer;
     align-items: center;
 }
 .navbar__link{
-    margin-left: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left:5rem;
+    
+}
+.navbar__link i{
+    font-size: 15px;
+    padding-right: 10px;
+    color: blue;
+}
+.navbar__option:hover.navbar__link i{
+    color: gray;
 }
 .navbarlink__active{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff !important;
+    color: black !important;
     text-decoration: none;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -73,24 +89,36 @@ cursor: pointer;
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: gray !important;
+    color: black !important;
     font-size: 0.85rem;
     opacity: 0.6;
     transition: 0.5s ease-in-out;
 }
 .navbar__option:hover{
     opacity: 1;
+    transform: scale(1.1);
+    color: firebrick !important;
+    
 }
 
 .navbar__login{
-    margin-left: 3rem;
-    border-radius: 10px;
+    margin-left: 5rem;
+    border-radius: 50px;
     padding: 0.4rem 1.2rem;
-    color: white !important;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
     transition: 0.3s ease-in-out ;
+    color: black;
+    border: 1px solid blue;
+    transition: 0.5s ease-in-out;
 
 }
+.navbar__login:hover{
+    background-color: blue;
+    color: white !important;
+  
+
+}
+
+
 
 .navbar__social{
     display: flex;
@@ -98,7 +126,7 @@ cursor: pointer;
    align-items: center;
 }
 .navbar__social a{
-    color: #fff !important;
+    color: black !important;
     margin-left: 1rem;
     font-size: 1.2rem;
     opacity: 0.6;
@@ -106,7 +134,47 @@ cursor: pointer;
 }
 .navbar__social a:hover{
     opacity: 1;
+    color: brown !important;
 }
+@media screen  and (min-width:2560px){
+   
+    .navbar__link {
+       margin-left: 8rem;
+       
+    }
+    .navbar__link a{
+        font-size: 30px;
+    }
+    .navbar__login{
+        margin-left: 8rem;
+    }
+    .navbar__link i{
+        font-size: 25px;
+        padding-right: 10px;
+        color: blue;
+    }
+   
+    
+}
+
+@media screen  and (max-width:1280px){
+   
+    .navbar__link{
+       margin-left: 1.5rem;
+    }
+    .navbar__login{
+        margin-left: 1.5rem;
+       
+    }
+    .navbar__link i{
+        font-size: 15px;
+        padding-right: 10px;
+        color: blue;
+    }
+   
+    
+}
+
 @media screen  and (max-width:850px){
     .navbar__social{
         display: none;
@@ -116,6 +184,10 @@ cursor: pointer;
     }
     .navbar__menu{
         display: block !important;
+       
+    }
+    .navbar__container{
+        padding: 1.2rem 1rem;
     }
    
     
@@ -126,11 +198,12 @@ cursor: pointer;
 .navbar__menudetalls{
     position: fixed;
     top: 5rem;
-    right: 13rem;
+    right: 14rem;
     transition: 1s ease-in-out;
+ 
 }
 .navbar__menuicon{
-    color: gray!important;
+    color: darkgray!important;
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0.6;
@@ -146,15 +219,20 @@ cursor: pointer;
     color: white !important;
     flex-direction: column;
     position: absolute;
-    max-width:300px ;
+    max-width:300px;
     height: 45vh;
     border-radius: 50px 1px 50px 50px ;
-   background-color :whitesmoke;
+    background-color: rgba(75, 75, 75, 0.129);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  
 }
 .navbar__closeicon{
     position: absolute;
-    left: 9rem;
+    left: 10rem;
     top: 1rem;
     cursor: pointer;
     font-size: 1rem;
+    color: blue!important;
+    
 }

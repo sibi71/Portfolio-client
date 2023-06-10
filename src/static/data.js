@@ -7,13 +7,30 @@ import nodejs from "../img/nodejs.png"
 import fs from "../img/firebase.png"
 import aws from "../img/aws.png"
 
+
+ 
 export const navbarlink = [
-   "home",
-   "about",
-   "skills",
-   "project",
-   "contact",
+
+   {
+   icon:<i className="fa-solid fa-house fa-beat-fade"></i>,
+   title:"home"},
+   {icon:<i className="fa-solid fa-user fa-beat-fade"></i>,
+   title:"about"
+   },
+   {icon:<i className="fa-sharp fa-solid fa-skull fa-beat-fade"></i>,
+   title:"skills"
+   },
+   {
+   icon:<i className="fa-brands fa-codiepie fa-beat-fade"></i>,
+   title:"project"
+   },
+
+   {
+      icon:<i className="fa-brands fa-mailchimp fa-beat-fade"></i>,
+      title:"contact"},
 ]
+
+
 
 export const skillsicon = [
    html,
@@ -39,13 +56,31 @@ export const projectimg = [
 ]
 
 export const service = [
-   {
-      web:"Web developer service involves designing, building, and maintaining websites using coding languages such as HTML, CSS, and JavaScript to ensure optimal functionality and user experience.",
-      mern:"MERN stack developer service involves developing web applications using MongoDB, Express, React, and Node.js, allowing for efficient development of dynamic and scalable full-stack web applications.",
-      full:"Full-stack developers are responsible for developing both front-end and back-end components of web applications. They have knowledge of multiple programming languages and are proficient in various software development tools, enabling them to create robust and dynamic web applications",
-      react:"React developers are responsible for developing user interfaces and components using the React.js library. They have expertise in JavaScript, HTML, CSS, and other front-end languages, enabling them to create high-quality, scalable, and interactive web applications."
+   
+      {
+         title:"web developer",
+         img:"https://cdni.iconscout.com/illustration/premium/thumb/web-developer-working-on-project-4550335-3779143.png",
+         services:"Web developer service involves designing, building, and maintaining websites using coding languages such as HTML, CSS, and JavaScript to ensure optimal functionality and user experience."
+
+      },
+      {
+         title:"MERN  developer",
+         img:"https://cdni.iconscout.com/illustration/premium/thumb/graphic-designer-4757548-3956351.png",
+         services: "MERN stack developer service involves developing web applications using MongoDB, Express, React, and Node.js, allowing for efficient development of dynamic and scalable full-stack web applications.",
+
+      },
+      {
+         title:"Full stack  developer",
+         img:"https://cdni.iconscout.com/illustration/premium/thumb/full-stack-javascript-developer-at-office-4190668-3491172.png",
+         services:  "Full-stack developers are responsible for developing both front-end and back-end components of web applications enabling them to create robust and dynamic web applications",
+
+      },
+  
+     
+    
       
-   }
+      
+   
 ]
 
 

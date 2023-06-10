@@ -4,9 +4,17 @@
 .post{
     background-color:black;
     color: #fff;
-   
+   min-width: 300px;
+    height:650px;
+  
+}
+.post__img{
+    max-height: 200px !important;
 }
 
+.post__description{
+    margin:20px 0px 0px 0px  ;
+}
 .post__host a{
     color: #fff !important;
     background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
@@ -25,4 +33,17 @@
 }
 .post__host a:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width:768px){
+    .post{
+        height: 698px;
+    }
+        
+}
+@media screen and (max-width:500px){
+.post{
+    height: auto;
+}
+    
 }

@@ -9,6 +9,8 @@ import { navbarlink } from '../../static/data'
 import { HiMenuAlt3 ,HiX} from "react-icons/hi"
 import { motion} from "framer-motion"
 import Navlink from '../Navlink/Navlink'
+
+
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
@@ -57,17 +59,19 @@ const Navbar = () => {
       <div className='navbar__info'>
         {
             navbarlink.map((navlink,index)=>{
+            
               return(
                 <div className='navbar__link' key={index}>
-                  <a href={`#${navlink}`}  
-                   className="navbar__option">{navlink}</a>
+                 {navlink.icon}
+                  <a href={`#${navlink.title}`}  
+                   className="navbar__option">{navlink.title}</a>
                 </div>  
               )
             })
         }
         
       <div className='navbar__link'>
-      <Link to="/upload" className="navbar__option" >upload</Link>
+      <i class="fa-solid fa-cloud-arrow-up fa-beat-fade"></i><Link to="/upload" className="navbar__option" >upload</Link>
       <Link to="/login" className='navbar__login navbar__option' onClick={login}> {user? "logOut":"logIn"}</Link>
       </div>
        
@@ -84,19 +88,28 @@ const Navbar = () => {
         toggle && (
           <motion.div   
            className='navbar__menudetalls'>
-        <div 
-          
-        className='navbar__menuitems'>
+        <motion.div 
+         initial={{x:25}}
+         animate={{x:5}}
+         transition={{duration:1}}
+          className='navbar__menuitems'>
           {
             navbarlink.map((link,index)=>{
               return(
-                    <Navlink link={link} key={index} setToggle={setToggle}/>            
+                    <Navlink title={link.title} icon={link.icon} key={index} setToggle={setToggle}/>            
               )
             })  
            
           }
-        </div>
+        </motion.div>
+        <motion.div 
+        initial={{x:25}}
+        animate={{x:5}}
+        transition={{duration:1}}
+        >
         <HiX className='navbar__closeicon' onClick={()=>setToggle(!toggle)} />
+        </motion.div>
+        
         </motion.div>
         )      
       }

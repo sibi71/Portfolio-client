@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import "./About.css"
-import hero from "../../img/me2.jpg"
+import hero  from "../../img/Mind map-pana.png"
 import {motion} from "framer-motion"
 const About = () => {
   return (
@@ -12,20 +12,20 @@ const About = () => {
       className='about__title'>
         <h1>About Me</h1>
         </motion.div>
-        <div className='about__container'>
+        <motion.div 
+         initial ={{opacity:0}}
+         whileInView = {{y:[-50,0],opacity:1}}
+         animate={{y:0,opacity:1}}
+         transition={{duration:2,delay:0.5}}
+         className='about__container'>
           <motion.div
-          initial={{x:0,opacity:0}}
-          whileInView={{x:[-250,0],opacity:1}}
-          transition={{duration:1}}
            className='about__left'>
             <motion.img 
            
             src={hero} alt="" />
           </motion.div>
             <motion.div 
-            initial={{x:0,opacity:0}}
-            whileInView={{x:[250,0],opacity:1}}
-            transition={{duration:1}}
+            
             className='about__right'>
               <p>
               A passion for web development,
@@ -33,9 +33,9 @@ const About = () => {
                 I am proficient in using React, Node.js, Express, and MongoDB to 
               develop efficient and user-friendly web applications.
               </p>
-              <span><i class="fa-solid fa-user"></i> Arunsibi</span>
-              <span><i class="fa-solid fa-phone"></i> +7904613995</span>
-              <span><i class="fa-solid fa-paper-plane"></i> thearunsibi@gmail.com</span>
+              <span><i className="fa-solid fa-user"></i> Arunsibi</span>
+              <span><i className="fa-solid fa-phone"></i> +7904613995</span>
+              <span><i className="fa-solid fa-paper-plane"></i> thearunsibi@gmail.com</span>
               <motion.a
                whileHover={{scale:1.1}}
                transition={{duration:0.3}} 
@@ -44,7 +44,7 @@ const About = () => {
               </motion.a>
 
             </motion.div>
-        </div>
+        </motion.div>
     </div>
     
   )

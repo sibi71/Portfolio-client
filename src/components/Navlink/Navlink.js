@@ -1,13 +1,14 @@
 import React from 'react'
 import "./Navlink.css"
 
-const Navlink = ({link,index ,setToggle}) => {
+const Navlink = ({title,icon,index ,setToggle}) => {
    
   return (
     <div 
    
     className='navlink' key={index} onClick={prev=>setToggle(!prev)}>
-            <a href={`#${link}`} className="navlink__option" >{link}</a> 
+              {icon}
+            <a href={`#${title}`} className="navlink__option" >{title}</a> 
     </div>
   )
 }

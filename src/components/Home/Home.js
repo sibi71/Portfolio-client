@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Home.css"
-import profile from "../../img/profile-pic.png"
+import profile from "../../img/profile.png"
 import Typed from 'react-typed';
 import { motion } from "framer-motion"
-const Home = () => {
+import { Link } from 'react-router-dom';
 
- 
+const Home = () => {
 
   return (
       <motion.div
@@ -15,19 +15,13 @@ const Home = () => {
        className='home' id='home'>  
 
        <div className='home__container'>
-        <motion.div 
-        
-          className='home__img'>
-        <img src={profile} alt="proflie" />
-        </motion.div>
-        <div className='home__info'>
-            <h3>Hey There, I'm <span>Arunsibi</span></h3>
-        
-        <div className='home__job'>
+        <div className='home__left'>
+          <div className='home__title'>
+        <h3>Hey There, I'm <span>Arunsibi</span></h3>
         <Typed  className='home__jobtitle'
          loop
          typeSpeed={70}
-         backSpeed={20}
+         backSpeed={30}
          strings={["Web Developer", "MERN Stack Developer", "Full Stack Developer"]}
          smartBackspace
          shuffle={false}
@@ -37,35 +31,25 @@ const Home = () => {
          loopCount={0}
          showCursor
          cursorChar="|"/>
+         </div>
+        <p>i design beautiful simple things, And i love what I do !</p>
+        <Link
+        to="/contact" className='home__contact'>contact with me </Link>
         </div>
-        <div className='home__details'>
-          <p>i design beautiful simple things, And i love what I do !</p>
-        </div>
-        </div>
-        <motion.a 
-          animate={{
-          y: [0,-15],          
-          }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 0.8, 1],
-            repeat: Infinity,
-            repeatDelay: 1
-          }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-         
-       
-        href="#contact" className='home__contact'>contact with me </motion.a>
-        <motion.div 
+
+        <div className='home__right'>
+        <div 
+         className='home__img'>
+        <img src={profile} alt="proflie" />
+       </div>
+       <motion.div 
           animate={{
             x: [0,20],          
             }}
             transition={{
               duration: 2,
               ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
+              times: [0.4, 0.8, 1, 1.5, 2],
               repeat: Infinity,
               repeatDelay: 1
             }}
@@ -77,12 +61,43 @@ const Home = () => {
           transition={{
             duration: 2,
             ease: "easeInOut",
-            times: [0.1, 0.2, 0.5, 0.8, 1],
+            times: [0.2, 0.4, 0.8, 1, 1.5],
             repeat: Infinity,
             repeatDelay: 1
           }}
-          className='full job'>MERN Stack Developer</motion.div>
-       </div>
+          className='full job'>Full Stack Developer</motion.div>
+           <motion.div 
+        animate={{
+          x: [0,20],          
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0.2, 0.4, 0.8, 1, 1.5],
+            repeat: Infinity,
+            repeatDelay: 1
+          }}
+          className='react job'>React Developer</motion.div>
+          <motion.div 
+        animate={{
+          x: [0,-20],          
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0.4, 0.8, 1, 1.5, 2],
+            repeat: Infinity,
+            repeatDelay: 1
+          }}
+          className='mern job'>MERN Stack Developer</motion.div>
+        
+        
+        </div>
+        </div>
+       
+       
+        
+      
       </motion.div>
   )
 }

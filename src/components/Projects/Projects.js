@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable react/jsx-no-target-blank */
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import "./Projects.css"
 import { collection, onSnapshot, query } from 'firebase/firestore'
 import { db } from "../../firebase"
@@ -18,23 +18,32 @@ import { Link } from 'react-router-dom'
 
 import {motion} from "framer-motion"
 import Card from 'react-bootstrap/Card';
+import { addToProject, getProject } from '../../slice/projectSlice';
+import {useDispatch,useSelector} from "react-redux"
+
 
 const Projects = () => {
-  const [posts,setPosts] = useState([]) 
+   const dispatch = useDispatch();
+  const projectdata= useSelector(getProject)
 
   useEffect(()=>{
       const q = query(collection(db,"posts"));
       onSnapshot(q,(Snapshot)=>{
-        setPosts(
+        
           Snapshot.docs.map((doc)=>{
-            return{
-              id:doc.id,
-              data:doc.data()
-            }
+            return(
+              dispatch(
+                addToProject({
+                    id:doc.id,
+                    data:doc.data()
+                })
+              )
+              
+            )
           })
-        )
+       
       })
-  },[])
+  },[dispatch])
 
 
 
@@ -48,7 +57,7 @@ const Projects = () => {
         <span>my Work</span>
         <h1>awsome projects</h1> 
       </motion.div>
-       
+     
     <div 
     className='projects__container'>
       <Swiper
@@ -67,20 +76,21 @@ const Projects = () => {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
+        
        
-     {posts.map((post,index)=>{
+     {projectdata.map((post,index)=>{
       return(
           <>
-         <SwiperSlide key={post.id}>
-         <Card className='project_card' >
+         <SwiperSlide key={index}>
+        <Card className='project_card' key={post.id}  >
         <Card.Img variant="top" src={post.data.image}  className='project__img'/>
         <Card.Body className='project__body'>
           <Card.Title className='project__title'>{post.data.title}</Card.Title>
           <a href={post.data.hosting} target="_blank" ><BiLinkExternal /></a>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted card__footer " >
-          <Card.Subtitle className="mb-2 text-muted project__host">Techtools: {post.data.techtools}</Card.Subtitle>
+          <small className="card__footer " >
+          <Card.Subtitle className="mb-2 project__host">Techtools: {post.data.techtools}</Card.Subtitle>
             </small>
         </Card.Footer>
         
@@ -94,7 +104,20 @@ const Projects = () => {
      }
        </Swiper>
        </div>
-       <Link to="/projectview" className='projects__view' >view more</Link>
+       <div className='projects__view'>
+       <Link to="/projectview" className='projects__viewbtn' > view More</Link>
+       </div>
+       <div className='projects__contant'>
+        <div className='projects__contantleft'>
+         <h2>just say hi!</h2>
+          <p>To be involved in work where I can utilize the skill and creativity within the system that effectively contributes to the growth of the Organization.</p>
+        </div>
+        <div className='projects__contantright' id="contact">
+        <Link to="/contact" className='projects__contantlink' >Contact Me</Link>
+        </div>
+       
+       </div>
+      
     </div>
   )
 }

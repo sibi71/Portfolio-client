@@ -4,151 +4,162 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    padding: 4rem 2rem;
+    padding: 5rem 1rem;
+    background-color: #11009E;
    
 }
 .about__title{
-    text-align: center ;
-    margin-bottom: 3rem;
+    text-align: center ;    
 }
 .about__title h1{
     font-size: 3rem;
+    color: white;
+
 }
 .about__container{
     display: flex;
     justify-content: space-between;
-    overflow:hidden ;
+    align-items: center;
     color: white;
-    padding: 3rem;
+    padding: 1rem 2rem;
     border-radius: 20px;
-    width: 80vw;
+    
 
 }
 .about__left{
-    width: 300px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 
 }
-
 
 .about__left img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius: 10px;
-    opacity: 1;
-    
-   
+    width: 600px;
+    height: 600px;   
 }
-
-
 
 .about__right{
     display: flex;  
     flex-direction: column;
     margin-left: 3rem;
+    flex: 1;
    
 }
 
 
 .about__right p{
-    font-size:1.2rem;
+    font-size:25px;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    max-width: 600px;
+    max-width:fit-content;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 .about__right span{
     display: flex;
     align-items: center;
-    font-size: 0.90rem;
-    max-width: 220px;
+    max-width: fit-content;
     margin-bottom: 2rem;
-    font-size: 1rem;
-    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+   
 }
 .about__right span i{
+    color: gold;
    margin-right: 1rem;
 }
 
 .about__right  a{
     text-decoration: none;
-    width: 165px;
-    border-radius: 10px;
+    max-width: fit-content;
+    border-radius: 99px;
     font-size: 1rem;
     display: flex;
-    color: white;
+    color: black;
     justify-content: center;
     align-items: center;
     padding: 0.65rem 1rem;
     text-transform: capitalize;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+.about__right a:hover{
+    box-shadow:rgba(240, 172, 46, 0.4) 5px 5px, rgba(240, 185, 46, 0.3) 10px 10px, rgba(240, 179, 46, 0.2) 15px 15px, rgba(246, 185, 53, 0.1) 20px 20px, rgba(250, 182, 56, 0.05) 25px 25px;
 }
 
+@media screen and (min-width:2560px) {
+    .about__title h1{
+        font-size: 80px;
+    }
+    .about__left img{
+        width: 800px;
+        height: 800px;   
+    }
+    .about__right p{
+        font-size: 50px;
+
+    }
+    .about__right span{
+        font-size: 30px;
+    }
+    .about__right  a{
+        font-size: 2rem;
+        padding: 2rem 5rem;
+    }
+}
 @media screen and (max-width:1024px) {
+    .about__left img{
+        width: 500px;
+        height:500px;   
+    }
+    .about__right p{
+        font-size: 20px;
+
+    }
 
 }
 
 @media screen and (max-width:850px) {
-
     .about__container{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        overflow: visible;
-    }
-    .about__left{
-        width: 300px;
+        padding: 0rem 1rem;
     }
     .about__right{
-        padding: 3rem 3rem;
+        padding: 3rem 1rem;
         width: auto;
     }
     .about__right p{
-        font-size: 1rem;
+        font-size: 20px;
     }
  
 }
-@media screen and (max-width:500px) {
-    .about{
-        padding: 0.2rem 0.5rem;
-    }
-    .about__title{
-        margin-top: 2rem;
-    }
+@media screen and (max-width:550px) {
     .about__container{
-        width: 90vw;
+        padding: 0rem 1rem;
     }
-
-    .about__left{
-        width: 200px;
-        height: 200px;
-    }
-    
-    .about__right{
-        width: auto;
-        margin-top: 2rem;
-        padding: 1rem;
-        margin-left: auto;
-    }
-    .about__left{
-        animation: none;
-        
-    }
-    .about__left img {
-        border-radius: 1px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    
-    .about__title h1{
-        font-size: 2rem;
-    }
-    
-    .about__left{
+    .about__left img{
+        width: 250px;
         height: 250px;
     }
-
+    .about__right p{
+        font-size: 15px;
+    }
+    .about__right{
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width:350px) {
+    .about__right{
+        padding: 3rem 0rem;
+    }
+    .about__right p{
+        font-size: 10px;
+    }
 }

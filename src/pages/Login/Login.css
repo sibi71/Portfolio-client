@@ -1,8 +1,5 @@
 .login{
-    background:url("https://wallpaperaccess.com/full/1877503.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right top, #e4b677, #e8ab64, #ec9f53, #f09243, #f58435, #ee752d, #e76525, #df551f, #c9431a, #b23214, #9c1f0e, #860808);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,7 +28,8 @@
     background-color:rgba(255, 255, 255, 0.175);
     border-radius: 10px;
     color:white;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
 .login__container img{
@@ -39,13 +37,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    border: 3px dashed lightgray;
+    border: 3px dashed white;
     border-radius: 99px;
     width: 50%;
     padding: 1rem;
 }
 .login__errmsg{
-    color: red;
+    color: antiquewhite;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 700;
@@ -76,7 +74,7 @@
     height: 30px;
     margin-top: 10px;
     color: white;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-color:blue !important; 
     border: none;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -102,7 +100,7 @@
     cursor: pointer;
     transition: 0.5s ease-in;
     color: white !important;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-color: blue; 
     border: none;
 
 

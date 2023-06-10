@@ -5,9 +5,10 @@ import {ImLocation} from "react-icons/im"
 import {SiMinutemailer} from "react-icons/si"
 import { IoCallSharp } from "react-icons/io5"
 import {motion} from "framer-motion"
+import {Link} from "react-router-dom"
 const Contact = () => {
   return (
-    <div className='contact' id='contact'>
+    <div className='contact'>
       <motion.div 
       initial = {{opacity:0}}
       whileInView={{y:[-50,0],opacity:1}}
@@ -37,11 +38,13 @@ const Contact = () => {
               <IoCallSharp />
               <span>+7904613995</span>  
             </p>
+            
           </div>
           <div className='contact__media'>
           <a href='https://www.instagram.com/the_sibi_._' target="_blank" rel="noreferrer" ><i className="fa-brands fa-instagram"></i></a>
         <a href='https://github.com/sibi71' target="_blank" rel="noreferrer" ><i className="fa-brands fa-github"></i></a>
         <a href='https://www.linkedin.com/in/arunsibi-319b321a1/' target="_blank" rel="noreferrer" ><i className="fa-brands fa-linkedin"></i></a>
+        <Link to="/" className='conatactback__home'>Back</Link>
           </div>
         </motion.div>
         <motion.div 

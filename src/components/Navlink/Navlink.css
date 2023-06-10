@@ -4,8 +4,12 @@
     align-items: center;
     padding: 0.2rem 3.5rem;
     color: white;
+    
    
    
+}
+.navlink i {
+    color: blue;
 }
 .navlink__option{
   
@@ -14,14 +18,8 @@
     text-transform: uppercase;
     padding: 0.6rem;
     transition: 0.3s ease-in-out;
-    color: black!important;
+    color: white!important;
     border-radius: 10px;
 
 
-}
-.navlink__option:hover
-{
-    transform: scale(1.1);
-    text-decoration: underline;
-    color: darkgreen !important;
 }

@@ -3,27 +3,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   padding: 5rem;
-   overflow: hidden;
+    overflow: hidden;
 
- 
-   
 }
 .project_card{
-  background-color: #ffffff;
+  background-color: #11009E;
 }
+
+
 
 
 .projects__title{
   display: flex;
-  color: #fff;
+  color:black;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3rem;
  
 }
 .projects__title span{
-  color: blueviolet;
+  color: blue;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #fff;
+
 }
 .projects__container {
     position: relative;
@@ -42,10 +42,10 @@
     align-items: center;
     height: 100%;
     width: 90vw;
-    left: 1rem;
+    
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    color: white;
     margin: 0;
     padding: 1.5rem;
   }
@@ -65,12 +65,13 @@
   .project__title{
     padding-right: 1rem;
   }
+  
   .project__body a{
     display: flex;
     justify-content: center;
     margin-bottom:5px ;
     font-size: 20px;
-    color:#000;
+    color:black;
   }
   .swiper{
     width: 100%;
@@ -92,28 +93,120 @@
   .swiper-pagination{
     display: none !important;
   }
-  
-
- 
   .projects__view{
+    margin: 3%;
+  }
+    
+  .projects__viewbtn{
+    background-color:blue;
+    padding: 1rem 2rem;
+    color: white !important;
     text-decoration: none;
-    border: none;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    padding: 0.50rem 1rem;
-    color: #fff !important;
-    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 99px;
+    justify-content: flex-start;
+    transition: 0.5s ease-in-out;
     text-transform: capitalize;
-    transition: 0.3s ease-in-out;
-  }
-  .projects__view:hover{
-    transform: scale(1.1);
-   
-  }
 
+    
+ 
+  }
+  .projects__viewbtn:hover{
+    box-shadow:rgba(240, 172, 46, 0.4) 5px 5px, rgba(240, 185, 46, 0.3) 10px 10px, rgba(240, 179, 46, 0.2) 15px 15px, rgba(246, 185, 53, 0.1) 20px 20px, rgba(250, 182, 56, 0.05) 25px 25px;
+  }
 
   
-  @media screen and (max-width:770px) {
+  .projects__contant{
+    background-color: #11009E;
+    width: 90vw;
+    height: 250px;
+    padding: 0.5rem 2rem;
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    -webkit-clip-path: polygon(0% 15%, 0 0, 51% 0, 100% 0, 88% 26%, 100% 49%, 87% 76%, 100% 100%, 100% 100%, 56% 100%, 0 100%, 0% 85%);
+    clip-path: polygon(0% 15%, 0 0, 51% 0, 100% 0, 88% 26%, 100% 49%, 87% 76%, 100% 100%, 100% 100%, 56% 100%, 0 100%, 0% 85%);
+  }
 
+.projects__contantleft{
+  font-size: 30px;
+  text-transform: capitalize;
+  width: 80%;
+}
+.projects__contantleft h2{
+  font-size: 40px;
+}
+.projects__contantright{
+  flex: 1;
+
+}
+.projects__contantlink{
+  color: black !important;
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 99px;
+  transition: 0.5s ease-in-out;
+}
+.projects__contantlink:hover{
+  box-shadow:rgba(240, 172, 46, 0.4) 5px 5px, rgba(240, 185, 46, 0.3) 10px 10px, rgba(240, 179, 46, 0.2) 15px 15px, rgba(246, 185, 53, 0.1) 20px 20px, rgba(250, 182, 56, 0.05) 25px 25px;
+}
+@media screen and (min-width:2560px) {
+  .projects__title span{
+    font-size: 30px;
+  }
+  .projects__title h1{
+    font-size: 70px ;
+  }
+  .projects__viewbtn{
+    padding: 2rem 5rem;
+    font-size: 30px;
+  }
+ 
+  .projects__contant{
+    height: 500px;
+    padding: 2rem;
+  }
+  .projects__contantleft{
+    font-size: 65px;
+    text-transform: capitalize;
+    width: 75%;
+  }
+  .projects__contantleft h2{
+    font-size: 90px;
+  }
+  .projects__contantlink{
+    padding: 3rem 5rem;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .swiper-slide{
+    width: 400px !important;
+  }
+
+  .projects__contantleft{
+    font-size: 25px;
+    text-transform: capitalize;
+    width: 70%;
+  }
+  .projects__contantleft h2{
+    font-size: 40px;
+  }
+
+  }
+  
+
+  
+  @media screen and (max-width:850px) {
+    
+    .swiper-slide{
+      width: 300px !important;
+    }
     .project__img{
       padding: 1rem;
       width: 100%;
@@ -125,13 +218,34 @@
     .project__host{
       font-size: 10px;
     }
+    .project__title{
+      margin-bottom: 0rem;
+    }
+    .projects__contant{
+      height: 200px;
+    }
+    .projects__contantleft{
+      font-size: 20px;
+      text-transform: capitalize;
+      width: 65%;
+    }
+    .projects__contantleft h2{
+      font-size: 30px;
+    }
   
     
 
   }
   @media screen and (max-width:500px) {
-
-  
+    
+   .projects__view{
+    margin: 5% 1%;
+   }
+    .projects__viewbtn{
+   
+     font-size: 15px;
+    }
+   
     .projects__title h1{
       display: flex;
       justify-content: center;
@@ -140,24 +254,46 @@
       letter-spacing: normal;
     }
     .projects__container{
-      height: 100%;
-      margin-top: 3rem;
- 
-    }
-    .projects__view{
-      margin-top: 3rem;
+      height: 100%; 
+      padding: 0rem;
+      
     }
     .swiper-wrapper {
       width: 80% !important;
       height:40% !important;
     }
+    .projects__contant{
+      height: fit-content;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem 0rem;
+    
+    }
+    .projects__contantleft{
+      font-size: 20px;
+      text-transform: capitalize;
+      width: fit-content;
+      margin-bottom: 2rem;
+      padding: 1rem; 
+    }
+    .projects__contantleft h2{
+      font-size: 40px;
+    }
+   
    
     
   }
   @media screen and (max-width:320px) {
-
-  
-  
+    .projects__view{
+      margin: 7% 1%;
+    }
+    
+    .project__img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
     .projects__title h1{
       display: flex;
       justify-content: center;
@@ -176,7 +312,9 @@
     height: 60%;
 
    }
-
+   .projects__title{
+    margin-bottom: 0rem;
+  }
    
     
   }

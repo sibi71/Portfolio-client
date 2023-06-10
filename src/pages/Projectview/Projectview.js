@@ -1,46 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import "./Projectview.css"
-import {db} from "../../firebase"
 import Post from '../../components/Post/Post';
-import { collection, onSnapshot, query } from 'firebase/firestore';
 import { Link } from 'react-router-dom';
 import { MdOutlineArrowBackIosNew } from "react-icons/md"
 import {motion} from "framer-motion"
 import { btnfilter } from '../../static/data'; 
+import { useSelector } from "react-redux"
+import {  getProject } from '../../slice/projectSlice';
 
 const Projectview = () => {
-  const [posts,setPosts] = useState([]) 
   const [tap,setTap] =useState({name:"all"})
   const [active,setActive] = useState(0)
   const [work ,setWork] = useState([])
+  const projectitem = useSelector(getProject)
 
-  useEffect(()=>{
-    const q = query(collection(db,"posts"));
-    onSnapshot(q,(Snapshot)=>{
-      setPosts(
-        Snapshot.docs.map((doc)=>{
-          return{
-            id:doc.id,
-            data:doc.data()
-          }
-        })
-      )
-    })
-},[])
 
 useEffect(()=>{
   if(tap.name === "all"){
-    setWork(posts)
+    setWork(projectitem)
   }
   else{
-    const newwork = posts.filter((workImg)=>{
+    const newwork = projectitem.filter((workImg)=>{
       return (
         workImg.data.category.toLowerCase() === tap.name
       )
     });
     setWork(newwork)
   }
-},[posts, tap]);
+},[ projectitem, tap]);
 
 
 const activeTap = (e,index)=>{
