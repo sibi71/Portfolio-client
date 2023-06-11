@@ -6,6 +6,7 @@ import {SiMinutemailer} from "react-icons/si"
 import { IoCallSharp } from "react-icons/io5"
 import {motion} from "framer-motion"
 import {Link} from "react-router-dom"
+import { MdOutlineArrowBackIosNew } from 'react-icons/md'
 const Contact = () => {
   return (
     <div className='contact'>
@@ -15,6 +16,7 @@ const Contact = () => {
       className='contact__title'>
       <span>get in touch</span>
       <h1>contact me</h1>
+      <Link to="/" className='conatactback__home'><MdOutlineArrowBackIosNew/></Link>
       </motion.div>
       <div className='contact__container'>
         <motion.div 
@@ -44,7 +46,6 @@ const Contact = () => {
           <a href='https://www.instagram.com/the_sibi_._' target="_blank" rel="noreferrer" ><i className="fa-brands fa-instagram"></i></a>
         <a href='https://github.com/sibi71' target="_blank" rel="noreferrer" ><i className="fa-brands fa-github"></i></a>
         <a href='https://www.linkedin.com/in/arunsibi-319b321a1/' target="_blank" rel="noreferrer" ><i className="fa-brands fa-linkedin"></i></a>
-        <Link to="/" className='conatactback__home'>Back</Link>
           </div>
         </motion.div>
         <motion.div 

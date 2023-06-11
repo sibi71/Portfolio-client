@@ -250,7 +250,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 19px;
+      font-size: 30px;
       letter-spacing: normal;
     }
     .projects__container{
@@ -298,7 +298,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 19px;
       letter-spacing: normal;
 
       

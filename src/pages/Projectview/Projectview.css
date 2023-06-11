@@ -1,10 +1,8 @@
 .projectview{
-   background-color: rgba(36, 35, 35, 0.467);
-    padding: 2rem;
-   
+    padding: 5rem 2rem;   
 }
 .projectview__back{
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-color: blue;
     position: absolute;
     left: 2rem;
     top: 1rem;
@@ -36,9 +34,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    background-color: blue;
+    padding: 5rem 1rem ;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
 .projectview__btn{
@@ -51,7 +53,7 @@
     padding: 0.3rem 2rem;
     margin: 1rem;
     border-radius: 5px;
-    border: none;
+    border: 1px dashed black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,11 +63,12 @@
     transition: 0.3s ease-in-out;
     background-color: #fff;
 
+
      
 }
 .projectview__btn .active{
     color: white;
-    background:  linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background:blue;
 }
 .project__filter button:hover{
     transform: scale(1.1);
