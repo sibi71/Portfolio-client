@@ -90,10 +90,12 @@ const Home = () => {
             repeatDelay: 1
           }}
           className='mern job'>MERN Stack Developer</motion.div>
-        
+         
         
         </div>
+
         </div>
+       
        
        
         

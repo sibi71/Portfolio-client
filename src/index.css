@@ -19,12 +19,12 @@ body {
 width: 5px;
 }
 ::-webkit-scrollbar-track{
-background:black;
+background:white
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 10px;
   height: 5px;
-  background: lightgray;
+  background: darkgray;
 }
 
 code {
