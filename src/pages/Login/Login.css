@@ -1,17 +1,18 @@
 .login{
-    background-image: linear-gradient(to right top, #e4b677, #e8ab64, #ec9f53, #f09243, #f58435, #ee752d, #e76525, #df551f, #c9431a, #b23214, #9c1f0e, #860808);
+    
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: white;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     
 }
 .login h1{
     padding: 30px;
     font-size: 25px;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
     font-weight: 700;
     letter-spacing: 10px;
    
@@ -43,7 +44,7 @@
     padding: 1rem;
 }
 .login__errmsg{
-    color: antiquewhite;
+    color: red;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 700;
@@ -65,7 +66,7 @@
     outline: none;
     padding-left: 10px;
     border-radius: 10px;
-    color: white;
+    color:white;
 
 
 }

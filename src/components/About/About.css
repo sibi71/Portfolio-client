@@ -179,7 +179,12 @@
 
 @media screen and (max-width:550px) {
    
-  
+    .about{
+        padding: 1rem 1rem;
+    }
+    .about__title{
+        margin-top: 0rem;
+    }
     .about__container{
         padding: 0rem 1rem;
     }

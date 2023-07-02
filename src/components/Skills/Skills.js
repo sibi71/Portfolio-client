@@ -22,7 +22,7 @@ const Skills = () => {
         !toggle ? ( 
         <motion.div className='skills__servicetool' >
         <div className='skills__changebtn'>
-        <button onClick={()=>setToggle(!toggle)} >Useing Tool</button>
+        <button onClick={()=>setToggle(!toggle)} >Skills</button>
         </div>
         <motion.div  initial={{y:-25}}
           animate={{y:-5}}

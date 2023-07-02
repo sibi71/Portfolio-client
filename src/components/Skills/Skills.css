@@ -24,6 +24,7 @@
     padding: 2rem 2rem;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
+    background-color: aliceblue;
    
 }
 
@@ -45,7 +46,6 @@
     border: 1px solid lightgray;
 }
 .skills__servicecontainer:hover{
-    color: white;
     box-shadow:rgba(240, 172, 46, 0.4) 5px 5px, rgba(240, 185, 46, 0.3) 10px 10px, rgba(240, 179, 46, 0.2) 15px 15px, rgba(246, 185, 53, 0.1) 20px 20px, rgba(250, 182, 56, 0.05) 25px 25px;
 }
 .skills__servicecontainer img{
@@ -54,8 +54,8 @@
    
 }
 .skills__servicecontainer h5{
-    font-size: 50px;
-    color: blue;
+    font-size: 40px;
+    color: orange;
 }
 
 .skills__servicecontainer  p {
@@ -63,27 +63,19 @@
    font-family: 'Josefin Sans', sans-serif; 
     text-transform: capitalize;
 }
-.skills__sevice0:hover{
-    
-    background-color: #D21312;
-    transform: skewx(10deg);
-}
+
 .skills__sevice1{
     flex-direction: row-reverse;
+    background-color:rgb(48, 46, 46);
+    color: white;
 }
-.skills__sevice1:hover{
-    background-color: #FFB72B;
-   transform: skewx(-10deg);
-}
-.skills__sevice2:hover{
-    background-color: #064420;
-    transform: skewx(10deg);
-}
+
 .skills__changebtn{
     margin: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .skills__changebtn button {
     padding: 0.65rem 2rem;
@@ -139,6 +131,7 @@
     gap: 5rem;
     width: 90vw;
     padding: 2rem 1rem;
+   
 
 }
 .skills__icons img{

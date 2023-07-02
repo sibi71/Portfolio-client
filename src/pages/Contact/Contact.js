@@ -45,7 +45,7 @@ const Contact = () => {
           <div className='contact__media'>
           <a href='https://www.instagram.com/the_sibi_._' target="_blank" rel="noreferrer" ><i className="fa-brands fa-instagram"></i></a>
         <a href='https://github.com/sibi71' target="_blank" rel="noreferrer" ><i className="fa-brands fa-github"></i></a>
-        <a href='https://www.linkedin.com/in/arunsibi-319b321a1/' target="_blank" rel="noreferrer" ><i className="fa-brands fa-linkedin"></i></a>
+        <a href='https://www.linkedin.com/in/thearunsibi/' target="_blank" rel="noreferrer" ><i className="fa-brands fa-linkedin"></i></a>
           </div>
         </motion.div>
         <motion.div 

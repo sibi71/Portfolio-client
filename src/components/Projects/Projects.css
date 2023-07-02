@@ -7,7 +7,7 @@
 
 }
 .project_card{
-  background-color: #11009E;
+  background-color: black
 }
 
 
@@ -15,7 +15,7 @@
 
 .projects__title{
   display: flex;
-  color:black;
+  color:white;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -33,6 +33,7 @@
   text-transform: capitalize;
   letter-spacing: 2px;
   font-weight: 600;
+  color: black;
 
 }
 .projects__container {
@@ -42,7 +43,6 @@
     align-items: center;
     height: 100%;
     width: 90vw;
-    
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: white;
@@ -71,7 +71,7 @@
     justify-content: center;
     margin-bottom:5px ;
     font-size: 20px;
-    color:black;
+    color: orange;
   }
   .swiper{
     width: 100%;

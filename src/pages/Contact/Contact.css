@@ -4,8 +4,8 @@
     align-items:center ;
     flex-direction: column;
     padding:5.65rem 2rem;
-    height: 100vh;
-    background-image: linear-gradient(to right top, #8a1e8c, #b7167e, #d7266b, #ed4657, #f86942, #fa7c38, #f98f2e, #f5a227, #f3a826, #f2af25, #efb526, #edbb27);
+   
+
 }
 .contact__title{
     display: flex;
@@ -23,7 +23,7 @@
     letter-spacing: 5px;
 }
 .contact__title h1{
-    color: #fff;
+    color: black;
     text-transform: capitalize;
     font-size: 3rem;
 }
@@ -31,13 +31,13 @@
     display: flex;
     justify-content: space-between;  
     padding: 1.5rem;
-    background-color:rgba(255, 255, 255, 0.296);
+    background-color:lavender;
     border-radius: 20px;
     backdrop-filter: blur(5px);
     width: 90vw;
     border-radius: 10px;
     overflow: hidden;
-    color: white;
+    color: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .contact__left h2{
